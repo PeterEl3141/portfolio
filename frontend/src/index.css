@@ -1,0 +1,36 @@
+html{
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  letter-spacing: 0.1rem;
+}
+
+body {
+  font-family: 'Didact Gothic';
+  background-color: #282724;
+  margin: 0;
+  padding: 0;
+  color: #eeeeee;
+  font-weight: 900;
+
+}
+
+
+
+a {
+  text-decoration: none;
+  color: #0070f3;
+}
+
+button {
+  background-color: #0070f3;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+button:hover {
+  background-color: #005bb5;
+}

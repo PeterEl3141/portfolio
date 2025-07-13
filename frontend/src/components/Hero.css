@@ -1,0 +1,55 @@
+.hero{
+    max-width: 1600px;
+    margin: 0 auto;
+    color: #eeeeee;
+    position: relative;
+}   
+
+.hero-body{
+    display: flex;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+.hero-left{
+    flex: 1;
+    max-width: 660px;
+    padding: 100px 40px;
+    margin-top: 250px;
+    font-weight: 30;
+}
+
+.hero-left h2{
+    margin-bottom: 70px;
+    text-align: center;
+    letter-spacing: 0.5rem;
+
+}
+.hero-right{
+    flex: 1;
+    height: 100vh;
+    overflow: hidden;
+}
+
+
+.hero-title{
+    position: absolute;
+    top: -80px;
+    left: 50%;
+    transform: translateX(-50%);      
+    z-index: 2;
+    color: #eeeeee;
+    font-family: 'Amiri Quran', serif;
+    font-size: 70px;
+    font-weight: 100;
+}
+
+
+
+.profile-pic{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
