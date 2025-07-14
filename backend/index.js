@@ -7,7 +7,7 @@ const { PrismaClient } = require('@prisma/client');
 const app = express();
 const prisma = new PrismaClient();
 
-app.use(cors({origin: 'https://portfolio-neon-rho-78.vercel.app/'}));
+app.use(cors({origin: 'https://portfolio-neon-rho-78.vercel.app'}));
 app.use(express.json());
 
 app.get("/", async (req, res) => {
