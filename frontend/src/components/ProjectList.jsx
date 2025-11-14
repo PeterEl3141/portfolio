@@ -1,41 +1,51 @@
-import './ProjectList.css';
-import { useEffect, useState } from 'react';
-import axios from 'axios';
-
-const API = import.meta.env.VITE_API_URL;
+import "./ProjectList.css";
+import { PROJECTS } from "../data/projects";
 
 export default function ProjectList() {
-  const [projects, setProjects] = useState([]); 
-  const [error, setError] = useState(null);
-  const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-    axios
-      .get(`${API}/`)
-      .then((res) => {
-        setProjects(res.data);
-        setLoading(false);
-      })
-      .catch((err) => {
-        console.error("Error fetching projects:", err);
-        setError("Failed to load projects.");
-        setLoading(false);
-      });
-  }, []); 
-
-  if (loading) return <p>Loading projects...</p>;
-  if (error) return <p>{error}</p>;
-
   return (
-    <div className="project-list">
-      {projects.map((project) => (
-        <div key={project.id} className="project-tile">
-          <img src={project.image} alt={`${project.title} screenshot`} />
+    <section className="project-list">
+      {PROJECTS.map((project) => (
+        <article key={project.id} className="project-tile">
+          <img
+            src={project.image}
+            alt={`${project.title} screenshot`}
+            className="project-image"
+          />
+
           <h3>{project.title}</h3>
-          <p>{project.description}</p>
-          <small>{new Date(project.date).toLocaleDateString()}</small>
-        </div>
+
+          <p className="project-description">{project.description}</p>
+
+          {project.tech && project.tech.length > 0 && (
+            <div className="project-tech">
+              {project.tech.map((t) => (
+                <span key={t} className="tech-pill">
+                  {t}
+                </span>
+              ))}
+            </div>
+          )}
+
+          {project.date && (
+            <small className="project-date">
+              {new Date(project.date).toLocaleDateString()}
+            </small>
+          )}
+
+          <div className="project-links">
+            {project.liveUrl && (
+              <a href={project.liveUrl} target="_blank" rel="noreferrer">
+                View project
+              </a>
+            )}
+            {project.repoUrl && (
+              <a href={project.repoUrl} target="_blank" rel="noreferrer">
+                View code
+              </a>
+            )}
+          </div>
+        </article>
       ))}
-    </div>
+    </section>
   );
 }

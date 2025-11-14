@@ -13,10 +13,11 @@
   }
   
   .navbar-left a {
-    font-weight: bold;
-    font-size: 1.25rem;
+    font-weight: 600;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
     text-decoration: none;
-    color: inherit;
+    color: #fff;
   }
   
   .navbar-right ul {

@@ -1,21 +1,28 @@
-import './Hero.css';
+import "./Hero.css";
 
+export default function Hero() {
+  return (
+    <section className="hero">
+      <h1 className="hero-title">Peter Elliott</h1>
 
-export default function Hero(){
-
-    return(
-        <div className='hero'>
-            <h1 className='hero-title'>Peter Elliott</h1>
-            <div className="hero-body">
-                <div className="hero-left">
-                    <h2>SOFTWARE DEVELOPER</h2>
-                    <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit dolorum iste consequuntur facilis ducimus obcaecati temporibus dolorem doloribus enim aliquid.</h3>
-                </div>
-                <div className="hero-right">
-                    <img src='./profile-picture.jpg' alt="Profile photo" className='profile-pic'/>
-                </div>
-            </div>
-           
+      <div className="hero-body">
+        <div className="hero-left">
+          <h2>Software Engineer</h2>
+          <p className="hero-text">
+            Career-changing software engineer with a background in Michelin-star
+            kitchens and formal maths teaching. I build full-stack web apps with
+            clean, modern interfaces and a focus on usability and reliability.
+          </p>
         </div>
-    )
+
+        <div className="hero-right">
+          <img
+            src="/profile-picture.jpg"
+            alt="Peter Elliott"
+            className="profile-pic"
+          />
+        </div>
+      </div>
+    </section>
+  );
 }
