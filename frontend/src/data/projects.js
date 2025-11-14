@@ -8,8 +8,8 @@ export const PROJECTS = [
     image: "/images/ahabsdream.png", // or imported image
     tech: ["React", "Node.js", "Express", "PostgreSQL"],
     liveUrl: "https://www.ahabsdream.com/",
-    repoUrl: "https://github.com/you/review-site",
-    date: "2024-09-01",
+    repoUrl: "https://github.com/PeterEl3141/ahab",
+    date: "01/07/2025",
   },
   {
     id: 2,
@@ -19,8 +19,8 @@ export const PROJECTS = [
     image: "/images/confuoco.png",
     tech: ["React", "Node.js", "Express"],
     liveUrl: "https://www.con-fuoco.co.uk/",
-    repoUrl: "https://github.com/you/store",
-    date: "2024-08-15",
+    repoUrl: "https://github.com/PeterEl3141/tstore",
+    date: "13/10/2025",
   },
   {
     id: 3,
@@ -30,7 +30,7 @@ export const PROJECTS = [
     image: "/images/director-portfolio.png",
     tech: ["React", "CSS"],
     liveUrl: "https://asher-portfolio-three.vercel.app/",
-    repoUrl: "https://github.com/you/director-portfolio",
-    date: "2024-07-10",
+    repoUrl: "https://github.com/PeterEl3141/asher-portfolio",
+    date: "10/11/2025",
   },
 ];
