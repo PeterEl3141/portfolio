@@ -15,7 +15,7 @@ export default function Contact() {
         <a href="https://github.com/yourusername" target="_blank" rel="noreferrer">
           GitHub
         </a>
-        <a href="https://www.linkedin.com/in/your-profile" target="_blank" rel="noreferrer">
+        <a href="https://www.linkedin.com/in/peter-elliott-90a7a4289/" target="_blank" rel="noreferrer">
           LinkedIn
         </a>
       </div>
